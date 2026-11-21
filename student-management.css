@@ -1,0 +1,140 @@
+/* General */
+body {
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+/* Form */
+form {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Inputs */
+form input,
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d5dbe3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+/* Select */
+form select {
+    background: white;
+    cursor: pointer;
+}
+
+/* Table */
+.table {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Table header */
+.table thead {
+    background: #0d6efd;
+    color: white;
+}
+
+.table th {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Table body */
+.table td {
+    padding: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr:hover {
+    background: #f0f6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+}
+
+
+
+/* Gender */
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.gender span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.gender input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #0d6efd;
+}
+
+.gender label {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Button */
+form button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0d6efd;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0b5ed7;
+}
